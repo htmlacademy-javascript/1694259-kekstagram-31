@@ -18,12 +18,12 @@ let isPalindrome = (line) => {
 
 let extractingNnumbers = (data) => {
   data = data.toString();
-  let res = '';
+  let result = '';
   for (let i of data) {
-    container = parseInt(i);
+    let container = parseInt(i);
     if (!isNaN(container)) {
-      res += i;
+      result += i;
     }
   }
-  return parseInt(res);
+  return parseInt(result, 10);
 };
