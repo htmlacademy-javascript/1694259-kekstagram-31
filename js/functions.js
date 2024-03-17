@@ -19,11 +19,13 @@ const isPalindrome = (line) => {
 const extractingNnumbers = (data) => {
   data = data.toString();
   let result = '';
-  for (let i of data) {
-    let container = parseInt(i);
+  for (const i of data) {
+    const container = parseInt(i, 10);
     if (!isNaN(container)) {
       result += i;
     }
   }
   return parseInt(result, 10);
 };
+
+export {checkLineLength, isPalindrome, extractingNnumbers};
