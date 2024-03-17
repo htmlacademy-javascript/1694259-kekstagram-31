@@ -1,4 +1,4 @@
-let checkLineLength = (line, len) => {
+const checkLineLength = (line, len) => {
   if (line.length <= len) {
     return true;
   } else {
@@ -6,7 +6,7 @@ let checkLineLength = (line, len) => {
   }
 };
 
-let isPalindrome = (line) => {
+const isPalindrome = (line) => {
   let container = line.replaceAll(' ', '');
   container = container.toLowerCase();
   let newLine = '';
@@ -16,7 +16,7 @@ let isPalindrome = (line) => {
   return newLine === container;
 };
 
-let extractingNnumbers = (data) => {
+const extractingNnumbers = (data) => {
   data = data.toString();
   let result = '';
   for (let i of data) {
